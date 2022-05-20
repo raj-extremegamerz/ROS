@@ -1,5 +1,6 @@
-apply plugin: 'com.android.application'
-
+ plugins {
+    id "com.android.application"
+}
 android {
 	productFlavors {
 		Test {
@@ -12,7 +13,7 @@ android {
     defaultConfig {
         applicationId "com.raj.ROS"
         minSdkVersion 21
-        targetSdkVersion 32
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
     }
@@ -20,6 +21,9 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.debug
         }
     }
 }
