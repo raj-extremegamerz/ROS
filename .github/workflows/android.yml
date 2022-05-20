@@ -21,7 +21,10 @@ jobs:
         cache: gradle
 
     - name: Auto Excute And Build APK
-      run: sh ~/AndroidBuilder.sh
+      run: |
+       cd $GITHUB_WORKSPACE
+       chmod +x ~/gradlew
+       ./gradlew assembleDebug
     
 
     - uses: actions/upload-artifact@v3
