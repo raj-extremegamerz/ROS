@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="center|center_vertical|center_horizontal">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="vertical"
+		android:gravity="center|center_vertical|center_horizontal">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="vertical"
+				android:id="@+id/installerLinearLayout1">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="This is ROS installer. Note : This is in beta, feel free to report bug on rosbyraj@gmail.com"/>
+
+				<Button
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="Next"
+					android:id="@+id/installerButton1next"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="vertical"
+				android:id="@+id/installerLinearLayoutseclector"
+				android:gravity="right">
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:orientation="horizontal">
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:orientation="vertical">
+
+						<CheckBox
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:id="@+id/installerCheckBoxlinux"
+							android:text="Linux System"/>
+
+						<CheckBox
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:id="@+id/installerCheckBoxwindows"
+							android:text="Windows System Coming"/>
+
+					</LinearLayout>
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="NOTHING TO DOWNLOAD ADDLIONAL PACKAGE"
+						android:id="@+id/installerTextViewDSize"/>
+
+				</LinearLayout>
+
+				<Button
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="Install"
+					android:id="@+id/installerButtonSelectornext"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/installerLinearLayoutdownller"
+				android:orientation="vertical"
+				android:gravity="right">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="wrap_content"
+					android:text="Downloading System Please Wait"
+					android:id="@+id/installerTextViewDownload"/>
+
+				<Button
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="Next"
+					android:id="@+id/installerButtonDownDone"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="vertical"
+				android:gravity="right"
+				android:id="@+id/installerLinearLayoutCUser">
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:ems="10"
+					android:id="@+id/installerEditTextUsername"
+					android:hint="Create New Username"/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:inputType="textPassword"
+					android:layout_width="wrap_content"
+					android:ems="10"
+					android:id="@+id/installerEditTextPassword"
+					android:hint="Create New Password"/>
+
+				<Button
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="Done"
+					android:id="@+id/installerButtonInstallerDone"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<ProgressBar
+			style="?android:attr/progressBarStyleHorizontal"
+			android:layout_height="wrap_content"
+			android:layout_width="333dp"
+			android:id="@+id/installerProgressBar"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

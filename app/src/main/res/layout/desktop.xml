@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:id="@+id/desktopLinearLayoutwallpapper"
+	android:orientation="horizontal">
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="40dp"
+		android:orientation="vertical"
+		android:id="@+id/desktopLinearLayoutappsdrawer"
+		android:background="#FFFFFF">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:id="@+id/desktoptermimal">
+
+			<ImageView
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:src="@android:drawable/ic_delete"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Terminal"
+				android:textSize="10sp"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:id="@+id/desktoplinearlayout"
+		android:background="#000000"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="Text"
+		android:gravity="bottom"
+		android:id="@+id/desktopgravitybottom"/>
+
+</LinearLayout>
+
