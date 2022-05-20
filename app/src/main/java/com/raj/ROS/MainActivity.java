@@ -135,7 +135,7 @@ public class MainActivity extends Activity
 		}
 	}*/
 	private void InstallProot() throws IOException, ErrnoException, Exception{
-		if(getAssets().open("ROS_aarch64.zip")> ){
+		//if(getAssets().open("ROS_aarch64.zip")> ){
 		new File(service.EXTERNAL_DATA).mkdirs();
 		new File(service.FILES_PATH).mkdirs();
 		new File(service.BUSY_BIN).mkdirs();
